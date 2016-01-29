@@ -1,0 +1,13 @@
+{
+  "name": "betterworks-track",
+  "version": "1.0.0",
+  "description": "a simple proxy server for betterworks",
+  "main": "server.js",
+  "author": "betterworks",
+  "dependencies": {
+    "http-proxy": "^1.13.0"
+  },
+  "engines": {
+    "node": "4.1.1"
+  }
+}

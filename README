@@ -1,0 +1,5 @@
+Proxies requests to a given target (or google by default) over HTTP but also directly serves an apple-app-site-association file if requested directly.
+
+Examples (env.TARGET == http://mandrillapp.com)
+curl http://betterworks-track.herokuapp.com/apple-app-site-association
+curl http://betterworks-track.herokuapp.com/img/login-logo.png
