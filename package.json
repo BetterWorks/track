@@ -5,9 +5,10 @@
   "main": "server.js",
   "author": "betterworks",
   "dependencies": {
-    "http-proxy": "^1.13.0"
+    "http-proxy": "^1.13.0",
+    "newrelic": "^1.25.1"
   },
   "engines": {
-    "node": "4.1.1"
+    "node": "5.5.x"
   }
 }
