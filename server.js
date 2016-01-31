@@ -11,8 +11,8 @@ var target   = process.env.TARGET || 'http://mandrillapp.com';
 var port     = process.env.PORT || 8080;
 var siteFile = require('./apple-app-site-association.json');
 
-var proxy    = httpProxy.createProxyServer({'target': target, 'changeOrigin': true});
-var server   = http.createServer(onRequest).listen(port);
+var proxy  = httpProxy.createProxyServer({target: target, changeOrigin: true, xfwd: true});
+var server = http.createServer(onRequest).listen(port);
 
 proxy.on('error', onProxyError);
 
