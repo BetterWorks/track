@@ -7,7 +7,7 @@ var http      = require('http');
 var httpProxy = require('http-proxy');
 var url       = require('url');
 
-var target   = process.env.TARGET || 'https://www.mandrillapp.com';
+var target   = process.env.TARGET || 'https://sendgrid.net';
 var port     = process.env.PORT || 8080;
 var siteFile = require('./apple-app-site-association.json');
 
