@@ -1,5 +1,5 @@
 Proxies requests to a given target (or sendgrid.net by default) over HTTP but also directly serves an apple-app-site-association file if requested directly.
 
-Examples (env.TARGET == http://sendgrid.net)
+Examples (env.TARGET == https://sendgrid.net)
 curl http://betterworks-track.herokuapp.com/apple-app-site-association
 curl http://betterworks-track.herokuapp.com/img/login-logo.png
