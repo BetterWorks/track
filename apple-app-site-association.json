@@ -1,11 +1,12 @@
 {
+  "activitycontinuation": {
+    "apps": ["WS77B85MPE.com.betterworks.BetterWorks"]
+  },
   "applinks": {
     "apps": [],
-    "details": [
-      {
-        "appID": "WS77B85MPE.com.betterworks.BetterWorks",
-        "paths": ["*"]
-      }
-    ]
+    "details": [{
+      "appID": "WS77B85MPE.com.betterworks.BetterWorks",
+      "paths": ["*"]
+    }]
   }
 }
