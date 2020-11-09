@@ -9,6 +9,6 @@
     "newrelic": "^1.29.0"
   },
   "engines": {
-    "node": "6.4.x"
+    "node": "10.x"
   }
 }

@@ -1,0 +1,27 @@
+name: release-build
+
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  # release:
+  #   types: [published]
+
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set release tag
+      id: get-tag
+      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+    - uses: kciter/aws-ecr-action@master
+      with:
+        access_key_id: ${{ secrets.ACCESS_KEY_ID }}
+        secret_access_key: ${{ secrets.SECRET_ACCESS_KEY }}
+        account_id: 381963057307
+        repo: track
+        region: us-east-1
+        tags: latest,${{ steps.get-tag.outputs.tag }}
